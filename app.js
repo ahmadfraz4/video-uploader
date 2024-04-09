@@ -1,5 +1,4 @@
 import express from "express";
-import fileUpload from "express-fileupload";
 import videoRoute from "./src/routes/upload-video.route.js";
 import UserRoute from "./src/routes/user.route.js";
 import cors from "cors";
