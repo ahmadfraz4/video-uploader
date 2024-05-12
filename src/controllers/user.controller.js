@@ -8,7 +8,7 @@ let registerUser = AsyncHandler(async(req,res)=>{
         return res.json({success : false, message :'User Already Exist'});
     }
     let options = {
-        httpOnly : true, secure : true, expiresIn : 60 * 60 * 60 * 24 * 30 // now cookies can't be modified from frontend
+        httpOnly : true, expiresIn : 60 * 60 * 60 * 24 * 30 // now cookies can't be modified from frontend
     };
     let createUser =await userModel.create({username:username, email:email, password:password});
 
